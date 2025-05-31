@@ -98,22 +98,22 @@ body {
 
   /* Font weight utilities */
   .font-light {
-    font-weight: 160;
+    font-weight: 160 !important;
   }
 
   .font-semilight {
-    font-weight: 240;
+    font-weight: 240 !important;
   }
 
   .font-medium {
-    font-weight: 320;
+    font-weight: 320 !important;
   }
 
   .font-semibold {
-    font-weight: 380;
+    font-weight: 380 !important;
   }
 
   .font-bold {
-    font-weight: 460;
+    font-weight: 460 !important;
   }
 }
