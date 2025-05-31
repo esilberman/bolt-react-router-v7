@@ -79,68 +79,6 @@ body {
     @apply bg-white text-black hover:bg-white/90 transition-all duration-200;
   }
 
-  .btn-rainbow {
-    @apply relative overflow-hidden text-white transition-all duration-300;
-    background: linear-gradient(45deg, 
-      #ff0000, /* red */
-      #ff7f00, /* orange */
-      #ffff00, /* yellow */
-      #bfff00, /* lime */
-      #00ff00, /* green */
-      #00ffff, /* cyan */
-      #0000ff, /* blue */
-      #8a2be2, /* violet */
-      #800080, /* purple */
-      #ff69b4, /* hotpink */
-      #ff0000  /* back to red */
-    );
-    background-size: 300% 300%;
-    animation: rainbow 8s ease infinite;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
-  }
-
-  @keyframes rainbow {
-    0% {
-      background-position: 0% 50%;
-      box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* red */
-    }
-    10% {
-      box-shadow: 0 0 15px rgba(255, 127, 0, 0.5); /* orange */
-    }
-    20% {
-      background-position: 20% 50%;
-      box-shadow: 0 0 15px rgba(255, 255, 0, 0.5); /* yellow */
-    }
-    30% {
-      box-shadow: 0 0 15px rgba(191, 255, 0, 0.5); /* lime */
-    }
-    40% {
-      background-position: 40% 50%;
-      box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* green */
-    }
-    50% {
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* cyan */
-    }
-    60% {
-      background-position: 60% 50%;
-      box-shadow: 0 0 15px rgba(0, 0, 255, 0.5); /* blue */
-    }
-    70% {
-      box-shadow: 0 0 15px rgba(138, 43, 226, 0.5); /* violet */
-    }
-    80% {
-      background-position: 80% 50%;
-      box-shadow: 0 0 15px rgba(128, 0, 128, 0.5); /* purple */
-    }
-    90% {
-      box-shadow: 0 0 15px rgba(255, 105, 180, 0.5); /* hotpink */
-    }
-    100% {
-      background-position: 100% 50%;
-      box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* back to red */
-    }
-  }
-
   .card {
     @apply bg-card rounded-xl border border-white/5 shadow-lg backdrop-blur-sm;
   }

@@ -19,11 +19,9 @@ export default function Home() {
         <div className="card p-8 space-y-6">
           <h2 className="text-2xl font-semibold">Button Styles</h2>
           <div className="flex flex-wrap gap-4">
-            <Button>Default (White)</Button>
+            <Button>White</Button>
             <Button variant="ghost">Ghost</Button>
-            <Button variant="ghost-rainbow">Ghost Rainbow</Button>
-            <Button variant="white-rainbow">White Rainbow</Button>
-            <Button variant="destructive">Destructive</Button>
+            <Button className="bg-black text-white hover:bg-black/90">Black</Button>
           </div>
         </div>
       </div>
