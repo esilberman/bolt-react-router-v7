@@ -13,8 +13,8 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 shadow-lg shadow-destructive/20",
         ghost: "btn-ghost",
-        "ghost-rainbow": "btn-ghost relative before:absolute before:inset-0 before:rounded-lg before:p-[1px] before:bg-gradient-to-r before:from-[#ff00ff] before:via-[#00ffff] before:to-[#ff00ff] before:bg-[length:200%_200%] before:animate-rainbow before:-z-10",
-        "white-rainbow": "btn-white relative before:absolute before:inset-0 before:rounded-lg before:p-[1px] before:bg-gradient-to-r before:from-[#ff00ff] before:via-[#00ffff] before:to-[#ff00ff] before:bg-[length:200%_200%] before:animate-rainbow before:-z-10",
+        "ghost-rainbow": "btn-ghost relative before:absolute before:inset-0 before:rounded-lg before:p-[1px] before:bg-gradient-to-r before:from-[#ff0000] before:via-[#ff7f00] before:via-[#ffff00] before:via-[#00ff00] before:via-[#0000ff] before:via-[#4b0082] before:via-[#9400d3] before:to-[#ff00ff] before:bg-[length:200%_200%] before:animate-rainbow before:-z-10",
+        "white-rainbow": "btn-white relative before:absolute before:inset-0 before:rounded-lg before:p-[1px] before:bg-gradient-to-r before:from-[#ff0000] before:via-[#ff7f00] before:via-[#ffff00] before:via-[#00ff00] before:via-[#0000ff] before:via-[#4b0082] before:via-[#9400d3] before:to-[#ff00ff] before:bg-[length:200%_200%] before:animate-rainbow before:-z-10",
       },
       size: {
         default: "h-10 px-6 py-2",
