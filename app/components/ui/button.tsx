@@ -9,13 +9,12 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20",
+        default: "btn-white",
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 shadow-lg shadow-destructive/20",
         ghost: "btn-ghost",
-        white: "btn-white",
-        rainbow: "btn-rainbow",
+        "ghost-rainbow": "btn-ghost relative before:absolute before:inset-0 before:rounded-lg before:p-[1px] before:bg-gradient-to-r before:from-[#ff0099] before:via-[#00ff87] before:to-[#ff0099] before:bg-[length:200%_200%] before:animate-rainbow before:-z-10",
+        "white-rainbow": "btn-white relative before:absolute before:inset-0 before:rounded-lg before:p-[1px] before:bg-gradient-to-r before:from-[#ff0099] before:via-[#00ff87] before:to-[#ff0099] before:bg-[length:200%_200%] before:animate-rainbow before:-z-10",
       },
       size: {
         default: "h-10 px-6 py-2",
