@@ -9,13 +9,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20",
-        destructive:
-          "bg-destructive text-white hover:bg-destructive/90 shadow-lg shadow-destructive/20",
-        ghost: "btn-ghost",
         white: "btn-white",
-        rainbow: "btn-rainbow",
+        ghost: "btn-ghost",
+        destructive: "bg-destructive text-white hover:bg-destructive/90",
+      },
+      modifier: {
+        "rainbow-outline": "rainbow-outline",
+        "rainbow-glow": "rainbow-glow",
       },
       size: {
         default: "h-10 px-6 py-2",
@@ -25,7 +25,7 @@ const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "default",
+      variant: "ghost",
       size: "default",
     },
   }
@@ -34,6 +34,7 @@ const buttonVariants = cva(
 function Button({
   className,
   variant,
+  modifier,
   size,
   asChild = false,
   ...props
@@ -45,7 +46,7 @@ function Button({
 
   return (
     <Comp
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(buttonVariants({ variant, modifier, size, className }))}
       {...props}
     />
   )
