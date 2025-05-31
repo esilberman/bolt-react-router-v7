@@ -81,20 +81,30 @@ body {
 
   .btn-rainbow {
     @apply relative overflow-hidden text-white transition-all duration-300;
-    background: linear-gradient(45deg, #ff0099, #6366f1, #00ff87, #ff0099);
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
     background-size: 300% 300%;
     animation: rainbow 8s ease infinite;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
   }
 
   @keyframes rainbow {
     0% {
       background-position: 0% 50%;
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    }
+    25% {
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     }
     50% {
       background-position: 100% 50%;
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    }
+    75% {
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     }
     100% {
       background-position: 0% 50%;
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
     }
   }
 
